@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>tabela</title>
+    <style>
+        tr,td {
+            border:1px dotted black; 
+        }
+        table { 
+            padding: 5px;
+            width:100%;
+            border:5px ridge black;
+        }
+        td {
+            height:50px;
+            text-align: center;
+            vertical-align:bottom ;
+        }
+        th {
+            border:dashed 1px black;
+        }
+       .naglowek {
+        background-color: aqua;
+        }
+        .wazne {
+            background-color: brown;
+        }
+        .info {
+            background-color:#ff0;
+        }
+        .row1 {
+            background-color: #666;
+        }
+        .row2 {
+            background-color: #444;
+        }
+    </style>
+  </head>
+
+<body>
+<table>
+    <tr>
+    <th>nagłowk1</th>
+    <th>nagłowk2</th>
+    <th>nagłowk3</th>
+    <th>nagłowk4</th>    
+    </tr>
+  <tr class="row1">
+    <td>tekst1a</td>
+    <td >tekst2a</td>
+    <td>tekst3a</td>
+    <td rowspan="2">tekst4a</td>
+  </tr> 
+  <tr class="row2">
+    <td>tekst1b</td>
+    <td colspan="2">tekst3b</td>
+  </tr> 
+  <tr class="row1">
+    <td>tekst1c</td>
+    <td>tekst2c</td>
+    <td>tekst3c</td>
+    <td>tekst4c</td>
+  </tr> 
+  <tr class="row2">
+    <td colspan="4">tekst1d</td>
+  </tr>
+</table>
+</body>
+</html>
